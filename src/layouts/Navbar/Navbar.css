@@ -1,0 +1,22 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.navbar__content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar_logo {
+  width: 50px;
+}
+
+.nabvar__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 50px;
+  background-color: #eaf2f8;
+}
