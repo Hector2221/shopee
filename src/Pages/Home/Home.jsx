@@ -4,7 +4,7 @@ export const Home = ({ data }) => {
     <>
       <div className="Productos">
         {data.map((item, index) => (
-          <div key={index} className="card">
+          <div key={index} className="cards">
             <img src={item.image} alt="" className="producto__img" />
             <p>{item.title}</p>
           </div>

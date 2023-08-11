@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Page404 } from "./Pages";
+import { Home, Page404, PgElectronicos } from "./Pages";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import { Navbar } from "./layouts";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [data, setData] = useState(null);
@@ -38,6 +39,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home data={data} />} />
+        <Route path="/Electronicos" element={<PgElectronicos />} />
         <Route path="/*" element={<Page404 />} />
       </Routes>
     </Router>
